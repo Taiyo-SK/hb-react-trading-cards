@@ -13,7 +13,7 @@ function TradingCard(props) {
     <div className="card">
       <h2>Name: {props.name}</h2>
       <img src={props.imgUrl} alt="profile" />
-      <h2>Skill: </h2>
+      <h2>Skill: {props.skill}</h2>
     </div>
   );
 }
@@ -31,4 +31,16 @@ ReactDOM.render(
 ReactDOM.render(
   <TradingCard name="Llambda" skill="knitting scarves" imgUrl="/static/img/llambda.jpg" />,
   document.querySelector('#llambda'),
+);
+
+// Adding new friend, Merge!
+ReactDOM.render(
+  <TradingCard name="Merge" skill="swimming on land" imgUrl="/static/img/merge.png" />,
+  document.querySelector('#merge'),
+);
+
+// Adding new friend, Seedpy!
+ReactDOM.render(
+  <TradingCard name="Seedpy" skill="watering seeds" imgUrl="/static/img/seedpy.jpeg" />,
+  document.querySelector('#seedpy'),
 );
